@@ -10,4 +10,4 @@ COPY setup.sh .
 RUN pwd && ls && chmod +x ./setup.sh
 
 # Execute the shell script from the working directory
-RUN ./start.sh
+RUN /usr/src/app/start.sh
