@@ -7,7 +7,7 @@ WORKDIR /usr/src/app/
 COPY setup.sh .
 
 # Grant execution permissions to the script
-RUN pwd && chmod +x setup.sh
+RUN pwd && ls && chmod +x ./setup.sh
 
 # Execute the shell script from the working directory
-ENTRYPOINT ["./start.sh"]
+RUN ./start.sh
