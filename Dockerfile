@@ -1,4 +1,5 @@
 FROM node:alpine
+RUN apk --no-cache add git
 
 # Set the working directory
 WORKDIR /usr/src/app/
