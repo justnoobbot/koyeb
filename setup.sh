@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 PAT="$GITHUB_PAT"       # Github PAT (from env variables)
 
