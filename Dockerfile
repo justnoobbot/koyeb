@@ -1,4 +1,13 @@
 FROM node:alpine
-COPY ./setup.sh .
-RUN chmod u+x /setup.sh
-RUN ./setup.sh
+
+# Set the working directory
+WORKDIR /usr/src/app/
+
+# Copy the shell script into the container
+COPY setup.sh .
+
+# Grant execution permissions to the script
+RUN chmod +x setup.sh
+
+# Execute the shell script from the working directory
+CMD ["./setup.sh"]
