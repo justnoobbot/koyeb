@@ -7,7 +7,7 @@ WORKDIR /usr/src/app/
 COPY setup.sh .
 
 # Grant execution permissions to the script
-RUN chmod +x setup.sh
+RUN ls -l setup.sh && chmod +x setup.sh && ls -l setup.sh
 
 # Execute the shell script from the working directory
 CMD ["./setup.sh"]
